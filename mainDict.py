@@ -17,8 +17,9 @@ def extractDefiniton(dict,key):
 
     
 dictionary = json.load(open("data.json"))
+new_dictionary = {k.lower():v for (k,v) in dictionary.items()}
 word = input("Enter word: ")
-output = extractDefiniton(dictionary, word)
+output = extractDefiniton(new_dictionary, word)
 if type(output) == list:
     for item in output:
         print(item)
