@@ -16,12 +16,6 @@ def extractDefiniton(dict,key):
     return (dict[key.lower()])
 
     
-
-
-
-
-
-
 dictionary = json.load(open("data.json"))
 word = input("Enter word: ")
 output = extractDefiniton(dictionary, word)
